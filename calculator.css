@@ -1,0 +1,123 @@
+.calculator{
+    border-radius: 39px 39px 39px 39px;
+    background-color: black;
+    height: 565Px;
+    width: 55%;
+    margin-left: 27%;
+}
+.display{
+    background-color: #303136;
+    border-radius: 39px 39px 39px 39px;
+}
+.display p {
+    font-family: 'Poppins';
+    color: #818181;
+    text-align: end;
+    margin-right: 8%;
+    font-size: 22px;
+    padding-top: 12%;
+}
+.display input{
+    margin-top: 23%;
+    color: white;
+    font-size: 65px;
+    border: none;
+    border-color: #303136;
+    width: 98.5%;
+    height: 100px;
+    background-color: #303136;
+    text-align: end;
+    margin-right: 8%;
+    border-radius: 39px 39px 39px 39px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding-top: 2%;
+}
+.buttons button{
+    font-size: 25px;
+    margin-left: 7%;
+    height: 50px;
+    width: 15%;
+    border-radius: 10px;
+    background-color: #303136;
+    color: #E2CD12;
+}
+#grey{
+    background-color: grey;
+    color: #A5A5A5;
+}
+#plus{
+    color: black;
+    background-color: #E2CD12;
+}
+#equals{
+    width: 39%;
+    color: black;
+    background-color: #E2CD12;
+}
+#min{
+    color: black;
+    background-color: #E2CD12; 
+}
+#dev{
+    color: black;
+    background-color: #E2CD12;
+}
+#multi{
+    color: black;
+    background-color: #E2CD12;
+}
+@media (max-width:480px) {
+    body{
+        margin-left: 0%;
+        border-radius: 0px;
+        background-color: black;
+        width: 100%;
+        height: 100%;
+    }
+    .calculator{
+        margin-top: 0%;
+        margin-left: 0%;
+        margin-bottom: 0%;
+        margin-right: 0%;
+    }
+    .display {
+        background-color: #303136;
+        border-radius: 39px 39px 39px 39px;
+        padding-top: 115%;
+        width: 181%;
+    }
+    .display input{
+        margin-top: 0%;
+        border-radius: 39px 39px 39px 39px;
+    }
+    .buttons {
+        width: 178%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+        padding-top: 15%;
+    }
+    .buttons button {
+        font-size: 25px;
+        margin-left: 7%;
+        height: 50px;
+        width: 15%;
+        border-radius: 10px;
+        background-color: #303136;
+        color: #E2CD12;
+    }
+    #equals{
+        width: 41%;
+        color: black;
+        background-color: #E2CD12;
+    }
+}
