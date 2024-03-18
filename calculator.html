@@ -8,29 +8,29 @@
 <body>
     <main class="calculator">
         <div class="display">
-            <p></p>
+            <input id="output" type="text" readonly>
             <input id="input" type="text" readonly>
         </div>
         <div class="buttons">
-        <button id="grey" onclick="Display('')">C</button>
-        <button id="grey" >%</button>
-        <button id="grey">⌫</button>
-        <button id="dev" onclick="Display('/')">/</button>
-            <button onclick="Display('7')">7</button>
-            <button onclick="Display('8')">8</button>
-            <button onclick="Display('9')">9</button>
-            <button id="multi" onclick="Display('x')">x</button>
-            <button onclick="Display('4')">4</button>
-            <button onclick="Display('5')">5</button>
-            <button onclick="Display('6')">6</button>
-            <button id="min" onclick="Display('-')">-</button>
-            <button onclick="Display('1')">1</button>
-            <button onclick="Display('2')">2</button>
-            <button onclick="Display('3')">3</button>
-            <button id="plus" onclick="Display('+')">+</button>
-            <button id="zero" onclick="Display('0')">0</button>
-            <button onclick="Display('.')">.</button>
-            <button id="equals">=</button>
+        <button id="grey" onclick="Clear('')">C</button>
+        <button id="grey" onclick="getOperator('%')">%</button>
+        <button id="grey" onclick="del()">⌫</button>
+        <button id="dev" onclick="getOperator('/')">/</button>
+            <button onclick="getNumber(7)">7</button>
+            <button onclick="getNumber(8)">8</button>
+            <button onclick="getNumber(9)">9</button>
+            <button id="multi" onclick="getOperator('x')">x</button>
+            <button onclick="getNumber(4)">4</button>
+            <button onclick="getNumber(5)">5</button>
+            <button onclick="getNumber(6)">6</button>
+            <button id="min" onclick="getOperator('-')">-</button>
+            <button onclick="getNumber(1)">1</button>
+            <button onclick="getNumber(2)">2</button>
+            <button onclick="getNumber(3)">3</button>
+            <button id="plus" onclick="getOperator('+')">+</button>
+            <button id="zero" onclick="getNumber(0)">0</button>
+            <button onclick="getNumber('.')">.</button>
+            <button id="equals" onclick="calculat()">=</button>
         </div>
     </main>
  <script src="calculator.js"></script>   
